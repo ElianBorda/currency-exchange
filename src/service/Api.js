@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = import.meta.env.API_URL;
+const API = import.meta.env.VITE_API_URL;
 
 axios.defaults.baseURL = API;
 
