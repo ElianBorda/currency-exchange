@@ -1,5 +1,8 @@
 import axios from "axios";
-axios.defaults.baseURL = 'https://api.vatcomply.com';
+
+const API = import.meta.env.API_URL;
+
+axios.defaults.baseURL = API;
 
 
 export const getCurrencies = () => axios.get('/currencies');
